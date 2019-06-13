@@ -1,4 +1,6 @@
+$color: rgb(122, 84, 84);
+
 .hello {
-  color: red;
+  color: $color;
   background: url("./icon.png");
 }
