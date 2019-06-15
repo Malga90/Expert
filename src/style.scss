@@ -1,3 +1,7 @@
+// Variables
+$color-primary-dark: #2b8895;
+$color-primary-light: #7dc6cf;
+
 *,
 *::after,
 *::before {
@@ -65,4 +69,17 @@ body {
       margin-right: 4rem;
     }
   }
+}
+
+// Header
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(img/1.jpg);
+  background-size: cover;
+  background-position: top;
 }

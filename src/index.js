@@ -1,6 +1,6 @@
 import _ from "lodash";
 import "./style.scss";
-import Icon from "./icon.png";
+// import Icon from "./icon.png";
 
 // function component() {
 //   const element = document.createElement("div");
