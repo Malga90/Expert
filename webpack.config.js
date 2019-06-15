@@ -2,6 +2,7 @@ const path = require("path");
 
 module.exports = {
   watch: true,
+  mode: "production",
   entry: ["./src/index.js", "./src/style.scss"],
   output: {
     filename: "bundle.js",
