@@ -125,8 +125,13 @@ body {
   text-align: center;
   font-size: 3rem;
   color: $color-primary-dark;
-  margin-bottom: 6rem;
+  margin-bottom: 9rem;
   letter-spacing: 0.7rem;
+
+  &--offer {
+    color: $color-white;
+    // margin-bottom: 9rem;
+  }
 }
 
 .heading-tertiary {
@@ -154,7 +159,7 @@ body {
 //Section-about
 .section-about {
   background-color: $color-white;
-  padding: 25rem 10rem;
+  padding: 25rem 15rem;
   margin-top: -20vh;
 
   &__row {
@@ -194,7 +199,8 @@ body {
     rgba($color-primary-light, 0.8),
     rgba($color-primary-dark, 0.8)
   );
-  padding: 20rem;
+  padding: 15rem;
+  margin-top: -20vh;
   &__row {
     display: flex;
     flex-direction: row;
@@ -206,10 +212,10 @@ body {
   width: 21%;
   background-color: rgba($color-white, 0.8);
   font-size: 1.7rem;
-  line-height: 1.8;
-  padding: 2.5rem;
+  line-height: 1.9;
+  padding: 2.8rem;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 5px;
 
   &__icon {
     font-size: 7rem;
@@ -218,10 +224,12 @@ body {
   }
 
   &__list {
-    text-align: left;
+    padding: 0 2.8rem;
   }
 
-  &__text {
+  &__text,
+  &__list {
     text-align: left;
+    color: $color-primary-dark;
   }
 }
