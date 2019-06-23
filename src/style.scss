@@ -238,3 +238,13 @@ body {
     color: $color-grey-dark;
   }
 }
+
+// Section contact
+.section-contact {
+  padding: 15rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-white, 0.8),
+    rgba($color-primary-light, 0.8)
+  );
+}
