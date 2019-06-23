@@ -3,6 +3,7 @@ $color-primary-dark: #184b52;
 $color-primary-light: #7dc6cf;
 
 $color-grey-light: #d8d9da;
+$color-grey-dark: #454545;
 
 $color-white: white;
 
@@ -123,7 +124,7 @@ body {
 .heading-secondary {
   text-transform: uppercase;
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.8rem;
   color: $color-primary-dark;
   margin-bottom: 10rem;
   letter-spacing: 0.7rem;
@@ -137,7 +138,7 @@ body {
   font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: $color-primary-dark;
+  color: $color-grey-dark;
   margin-bottom: 1.5rem;
 
   &--offer {
@@ -147,7 +148,7 @@ body {
 
 .paragraph {
   font-size: 1.6rem;
-  color: $color-primary-dark;
+  color: $color-grey-dark;
   line-height: 1.8;
 
   &:not(:last-child) {
@@ -234,6 +235,6 @@ body {
   &__text,
   &__list {
     text-align: left;
-    color: $color-primary-dark;
+    color: $color-grey-dark;
   }
 }
