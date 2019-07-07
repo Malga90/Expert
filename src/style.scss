@@ -7,6 +7,30 @@ $color-grey-dark: #454545;
 
 $color-white: white;
 
+// Mixins
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
+
 // Base
 *,
 *::after,
@@ -19,6 +43,17 @@ $color-white: white;
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(phone) {
+    font-size: 37.5%;
+  }
 }
 
 body {
@@ -35,6 +70,10 @@ body {
 
   display: flex;
   justify-content: space-between;
+
+  @include respond(phone) {
+    display: none;
+  }
 
   &__logo-box {
     color: $color-white;
@@ -179,6 +218,10 @@ body {
   }
 
   &:hover {
+    font-weight: 500;
+    color: $color-primary-dark;
+    background: $color-white;
+    border: 2px solid $color-grey-dark;
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba($color-grey-dark, 0.2);
     &::after {
@@ -364,7 +407,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 
-  height: 35rem;
+  height: 30rem;
   padding: 5rem;
   background-image: linear-gradient(
     to right bottom,
@@ -379,7 +422,7 @@ body {
   }
 
   &__text-box {
-    margin-top: -4rem;
+    margin-top: -2rem;
     color: $color-white;
     font-size: 2.2rem;
     font-weight: 500;
