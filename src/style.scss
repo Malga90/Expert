@@ -358,20 +358,48 @@ body {
 
 //Footer
 .footer {
-  padding: 15rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 35rem;
+  padding: 5rem;
   background-image: linear-gradient(
     to right bottom,
     rgba($color-primary-light, 0.8),
     rgba($color-primary-dark, 0.8)
   );
-  &__logo-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   &__icon {
     color: $color-white;
     width: 9rem;
     height: 9rem;
+  }
+
+  &__text-box {
+    margin-top: -4rem;
+    color: $color-white;
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    align-self: flex-end;
+  }
+
+  &__link-icon {
+    color: $color-white;
+    font-size: 5rem;
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+  }
+
+  &__copyright {
+    color: $color-white;
+    font-size: 1.6rem;
   }
 }
