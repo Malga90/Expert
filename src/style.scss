@@ -90,6 +90,7 @@ body {
     url(img/1.jpg);
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
   position: relative;
 
   &__text-box {
@@ -273,6 +274,7 @@ body {
   &__list {
     text-align: left;
     color: $color-grey-dark;
+    overflow: hidden;
   }
 }
 
@@ -282,6 +284,7 @@ body {
   height: 100%;
   background-image: url(img/4.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
 
   &__container {
     max-width: 114rem;
@@ -300,7 +303,7 @@ body {
   border-radius: 3px;
 
   &__form {
-    padding: 5.5rem;
+    padding: 6.5rem;
   }
 }
 
@@ -308,11 +311,18 @@ body {
 .form {
   &__inputs {
     display: flex;
-
     justify-content: space-between;
+  }
+
+  &__group {
+    width: 100%;
   }
   &__group:not(:last-child) {
     margin-bottom: 3rem;
+  }
+
+  &__group:first-of-type {
+    margin-right: 5rem;
   }
 
   &__input,
@@ -343,6 +353,25 @@ body {
     margin-left: 2rem;
     margin-top: 0.7rem;
     display: none;
-    transition: all 0.3s;
+  }
+}
+
+//Footer
+.footer {
+  padding: 15rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary-light, 0.8),
+    rgba($color-primary-dark, 0.8)
+  );
+  &__logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__icon {
+    color: $color-white;
+    width: 9rem;
+    height: 9rem;
   }
 }
