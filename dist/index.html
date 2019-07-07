@@ -10,21 +10,18 @@
   <body>
     <div class="navigation">
       <div class="navigation__logo-box">
-        <ion-icon name="home" class="navigation__icon"></ion-icon>
+        <ion-icon name="home" class="navigation__icon" id="home"></ion-icon>
       </div>
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link">O firmie</a>
+            <a href="#about" class="navigation__link">O firmie</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Uprawnienia</a>
+            <a href="#offer" class="navigation__link">Oferta</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Oferta</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Kontakt</a>
+            <a href="#contact" class="navigation__link">Kontakt</a>
           </li>
         </ul>
       </nav>
@@ -37,7 +34,7 @@
         </h1>
       </div>
     </header>
-    <section class="section-about">
+    <section class="section-about" id="about">
       <div class="section-about__heading-box">
         <h2 class="heading-secondary">
           O firmie
@@ -87,7 +84,7 @@
         </div>
       </div>
     </section>
-    <section class="section-offer">
+    <section class="section-offer" id="offer">
       <div class="section-offer__heading-box">
         <h2 class="heading-secondary heading-secondary--offer">
           Nasza oferta
@@ -157,7 +154,7 @@
         </div>
       </div>
     </section>
-    <section class="section-contact">
+    <section class="section-contact" id="contact">
       <div class="section-contact__container">
         <div class="contact">
           <div class="contact__form">
@@ -218,9 +215,9 @@
         <span class="footer__text">Ekspert Biuro Wycen</span>
       </div>
 
-      <div class="footer__link">
+      <a href="#home" class="footer__link">
         <ion-icon name="arrow-up" class="footer__link-icon"></ion-icon>
-      </div>
+      </a>
       <div class="footer__copyright">
         Małgorzata Delegeiwcz &copy; 2019. Wszelkie prawa zastrzeżone.
       </div>
