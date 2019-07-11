@@ -393,6 +393,11 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
 
+  @include respond(phone) {
+    background-image: none;
+    padding: 7.5rem 0;
+  }
+
   &__container {
     max-width: 114rem;
 
@@ -478,10 +483,14 @@ body {
     rgba($color-primary-dark, 0.8)
   );
 
+  @include respond(phone) {
+    padding: 5rem 1rem;
+    margin-top: -2rem;
+  }
+
   &__icon {
     color: $color-white;
-    width: 9rem;
-    height: 9rem;
+    font-size: 9rem;
   }
 
   &__text-box {
